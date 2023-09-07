@@ -16,7 +16,10 @@ export default function ProductsList() {
         {products.items &&
           products.items.map((el) => (
             <li key={el.id} className="p-4 bg-slate-200 rounded">
-              <img src={`/images/${el.img}.png`} alt={`/images/${el.title}`} />
+              <img
+                src={`https://samisassi8.github.io/eCommerce/images/${el.img}.png`}
+                alt={`https://samisassi8.github.io/eCommerce/images/${el.title}`}
+              />
               <div className="flex justify-between items-center mb-6">
                 <p className="text-slate-700 text-lg">{el.title}</p>
                 <p className="text-slate-900 font-bold">{el.price}</p>
