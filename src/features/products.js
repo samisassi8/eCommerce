@@ -24,7 +24,7 @@ export const products = createSlice({
 
 export function getProductsList(action) {
   return function (dispatch, getState) {
-    fetch("/data/inventory.json")
+    fetch("https://samisassi8.github.io/eCommerce/data/inventory.json")
       .then((response) => response.json())
       .then((data) => dispatch(addProducts(data.products)));
   };
