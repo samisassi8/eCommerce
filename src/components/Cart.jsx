@@ -24,7 +24,7 @@ export default function Cart({ onClose }) {
             cart.cartItems.map((el) => (
               <li key={el.id} className="flex items-center mb-4">
                 <img
-                  src={`/images/${el.img}.png`}
+                  src={`https://samisassi8.github.io/eCommerce/images/${el.img}.png`}
                   alt={el.title}
                   className="w-16 h-16 rounded"
                 />
